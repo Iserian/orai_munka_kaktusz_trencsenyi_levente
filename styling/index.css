@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #318CE7;
+    color: white;
+    padding: 20px;
+    margin: 0.5rem;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+}
+
+.menu-bar{
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    background-color: #318CE7;
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-bar a:hover {
+    background-color: lightblue; 
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    margin: 0.5rem;
+}
+
+img{
+    border: solid 2px darkblue;
+    border-radius: 5px;
+}
+
+.pictures img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #318CE7;
+    color: white;
+    padding: 20px;
+    margin: 0.5rem;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+}
+
+.picture-text-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+li{
+    line-height: 1.2;
+    gap: 5px;
+}
+
+ol{
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content{
+    border: solid 2px darkblue;
+    border-radius: 5px;
+    background-color: #318CE7;
+    height: 100%;
+    padding-left: 0.5rem;
+}
+
+.content h3{
+    margin-top: 1rem;
+
+}
+
+.picture-text-grid img{
+    padding-bottom: 1rem;
+    background-color: #318CE7;
+    
+}
+
+
+.picture-text-grid{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+
+    .menu-bar {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+    }
+
+    .picture-text-grid {
+        grid-template-columns: 1fr;
+    }
+    .picture-text-grid img{
+        width: 100%;
+    }
+
+    .pictures{
+        width: 100%;
+    }
+}
